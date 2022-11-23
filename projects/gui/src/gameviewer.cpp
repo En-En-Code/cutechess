@@ -102,13 +102,12 @@ GameViewer::GameViewer(Qt::Orientation orientation,
 
 	if (addChessClock)
 	{
-		QHBoxLayout* clockLayout = new QHBoxLayout();
+		QVBoxLayout* clockLayout = new QVBoxLayout();
 		for (int i = 0; i < 2; i++)
 		{
 			m_chessClock[i] = new ChessClock();
 			clockLayout->addWidget(m_chessClock[i]);
 		}
-		clockLayout->insertSpacing(1, 20);
 		layout->addLayout(clockLayout);
 	}
 	else

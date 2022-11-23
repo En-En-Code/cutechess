@@ -35,12 +35,12 @@ ChessClock::ChessClock(QWidget* parent)
 	m_timeLabel->setAutoFillBackground(true);
 
 	m_nameLabel->setTextFormat(Qt::RichText);
-	m_nameLabel->setAlignment(Qt::AlignHCenter);
+	m_nameLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
 
 	m_timeLabel->setTextFormat(Qt::RichText);
-	m_timeLabel->setAlignment(Qt::AlignHCenter);
+	m_timeLabel->setAlignment(Qt::AlignCenter);
 
-	QVBoxLayout* layout = new QVBoxLayout();
+	QHBoxLayout* layout = new QHBoxLayout();
 	layout->addWidget(m_nameLabel);
 	layout->addWidget(m_timeLabel);
 	setLayout(layout);
