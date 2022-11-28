@@ -43,6 +43,8 @@ ChessClock::ChessClock(QWidget* parent)
 	QHBoxLayout* layout = new QHBoxLayout();
 	layout->addWidget(m_nameLabel);
 	layout->addWidget(m_timeLabel);
+	layout->setStretch(0, 3);
+	layout->setStretch(1, 1);
 	setLayout(layout);
 }
 
